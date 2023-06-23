@@ -25,8 +25,11 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230624014910133.png">
 <meta property="og:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230624015114342.png">
+<meta property="og:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-52220b2dba6901ee2181b72951d25a7b_720w.webp">
+<meta property="og:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-9202796d27f4659d96ff13b11e6808c1_720w.png">
+<meta property="og:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-8d28ac51aedad913907c45b4907d325f_720w.webp">
 <meta property="article:published_time" content="2023-06-23T17:39:52.000Z">
-<meta property="article:modified_time" content="2023-06-23T18:16:55.186Z">
+<meta property="article:modified_time" content="2023-06-23T23:28:07.192Z">
 <meta property="article:author" content="子川">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230624014910133.png">
@@ -222,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.5k 字
+          4k 字
         
       </span>
     
@@ -233,7 +236,7 @@
         
         
         
-          22 分钟
+          34 分钟
         
       </span>
     
@@ -403,11 +406,53 @@
 
 <p>其他参考<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">用户文档</a></p>
 <h1 id="主题安装问题"><a href="#主题安装问题" class="headerlink" title="主题安装问题"></a>主题安装问题</h1><h2 id="报错：Error-Cannot-find-module-‘css’"><a href="#报错：Error-Cannot-find-module-‘css’" class="headerlink" title="报错：Error: Cannot find module ‘css’"></a>报错：Error: Cannot find module ‘css’</h2><p>只需要<br><code>npm install css --save</code></p>
+<h1 id="插入图片问题"><a href="#插入图片问题" class="headerlink" title="插入图片问题"></a>插入图片问题</h1><h2 id="如何向hexo博客中插入图片"><a href="#如何向hexo博客中插入图片" class="headerlink" title="如何向hexo博客中插入图片"></a><strong>如何向hexo博客中插入图片</strong></h2><p>众所周知，在md文件中插入图片的语法为<code>![]()</code>。</p>
+<p>其中<strong>方括号</strong>是图片描述，<strong>圆括号</strong>是图片路径。</p>
+<p>一般来说有三种图片路径，分别是<strong>相对路径，绝对路径和网络路径</strong>。</p>
+<p>所谓的网络路径就是直接引用网上的图片，直接复制图片地址，放在圆括号中就完事了。</p>
+<p>这种方式十分的方便，但是也存在一定的问题：</p>
+<ul>
+<li>图片失效导致无法加载；</li>
+<li>打开网页后要再请求加载图片；</li>
+<li>原网站限制，如微信公众号的图片会变得不可见等。</li>
+</ul>
+<p>这种方式算是有利有弊。</p>
+<p>绝对路径是图片在计算机中的绝对位置，相对路径是相对于当前文件的路径。</p>
+<p>由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。</p>
+<p>在hexo中使用<strong>文章资源文件夹</strong>需要在<code>config.yaml</code>文件中更改一下配置：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>当该配置被应用后，使用<code>hexo new</code>命令创建新文章时，会生成相同名字的文件夹，也就是文章资源文件夹。</p>
+<blockquote>
+<p>由于项目会生成新的文件目录，同时会解析Markdown中的图片路径，会导致一个问题。<br>如在一个文件目录下，博客名为<code>1.md</code>，相应的存在一个<code>1</code>文件夹存放图片<code>image.jpg</code>。<br>在Typora编辑器中，普通的md文件使用<code>![](1/image.jpg)</code>能在编辑器中正常显示图片。<br>在hexo中，按理说应该是使用<code>![](image.jpg)</code>，但网页中却无法正常显示。<br>此时应该使用这样的方式来引入图片：</p>
+
+</blockquote>
+<p>但是这样不方便。</p>
+<h2 id="图片插件"><a href="#图片插件" class="headerlink" title="图片插件"></a><strong>图片插件</strong></h2><p>插件<a href="https://link.zhihu.com/?target=https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>解决了这个问题。可以只用<code>npm install hexo-renderer-marked</code>命令直接安装，之后在<code>config.yaml</code>中更改配置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>之后就可以在使用<code>![](image.jpg)</code>的方式愉快的插入图片了。</p>
+<p>我们做了这么多都是为了方便，那么为什么不再方便一点呢。</p>
+<h2 id="hexo与Typora的完美结合"><a href="#hexo与Typora的完美结合" class="headerlink" title="hexo与Typora的完美结合"></a><strong>hexo与Typora的完美结合</strong></h2><p>上述是从文章资源文件夹中引用图片，前提是<strong>先将图片放入到文章资源文件夹</strong>，如果图片数量众多的话，一张一张的放很影响效率。但是不用怕，我们有很方便的解决方法。</p>
+<p><strong>Typora</strong>是我非常喜欢的Markdown文本编辑器，在之前的文章中也介绍过一点。</p>
+<p>Typora对于插入图片的支持做得非常好，在<code>文件-&gt;偏好设置</code>或者直接<code>&lt;C-,&gt;</code>进入设置。</p>
+<p><img src="/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-52220b2dba6901ee2181b72951d25a7b_720w.webp" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>使用该配置后，可以直接复制网页中的图片地址，粘贴到Typora中后，会直接复制该图片到文章资源文件夹，同时自动更改路径。</p>
+<p>如复制网络路径的图片<code>https://...../image.jpg</code>粘贴到Typora中叫<code>文章名</code>的文章后，图片会自动变为<code>![](文章名/image.jpg)</code>。</p>
+<p>但我们知道部署后，文件路径是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的<code>文件名/</code>。不慌，也很简单。</p>
+<p>在Typora编辑器中，使用<code>&lt;C-f&gt;</code>快捷键，将所有的<code>文章名/</code>替换为空即可删除。</p>
+<p><img src="/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-9202796d27f4659d96ff13b11e6808c1_720w.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>然后再将博客上传，图片就会随着文章一起打包。在网页中就可以看到正常显示的图片，大功告成。</p>
+<p>————-本地预览不显示图片的问题—————-</p>
+<p>在typora的设置中选择图片工具，为文章设置一个图片根目录。设置方式如下，之后选中存放图片的目录即可，根据不同版本的typora该设置项可以能在不能的位置。</p>
+<p><img src="/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/v2-8d28ac51aedad913907c45b4907d325f_720w.webp" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>格式 -&gt; 图片工具 -&gt; 设置图片根目录</p>
 <h1 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h1><p>1.<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/370635512">超详细 Hexo + Github Pages 博客搭建教程 - 知乎 (zhihu.com)</a></p>
 <p>2.<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">Hexo Fluid 用户手册 (fluid-dev.com)</a></p>
 <p>3.<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">fluid-dev&#x2F;hexo-theme-fluid: :ocean: 一款 Material Design 风格的 Hexo 主题 &#x2F; An elegant Material-Design theme for Hexo (github.com)</a></p>
 <p>4.<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a></p>
 <p>5.<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/issues/961">Error: Cannot find module ‘css’ · Issue #961 · fluid-dev&#x2F;hexo-theme-fluid (github.com)</a></p>
+<p>6.<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">hexo博客如何插入图片 - 知乎 (zhihu.com)</a></p>
 
                 
               </div>
