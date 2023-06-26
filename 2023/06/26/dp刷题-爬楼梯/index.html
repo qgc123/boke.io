@@ -16,26 +16,28 @@
   <meta name="author" content="子川">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1.学习计划 2.简历指导简历字数并非越多越好，任何关键词都可能引起面试官的考察兴趣  基础信息：  书写顺序：个人信息-&gt;教育经历（获奖经历）-&gt;专业技能-&gt;实习（而非工作）经历-&gt;项目经验 文件名：姓名-院校-电话 文件格式：pdf（word排版会乱） 模版：冷色调、不要表格   基本信息：求职意向、电话、出生年月、邮箱、照片  个人博客&#x2F;Github视情况而">
+    <meta name="description" content="爬楼梯题目描述原题链接：[70. 爬楼梯 - 力扣（LeetCode）](https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;climbing-stairs&#x2F; 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 示例 1： 12345输入：n &#x3D; 2输出：2解释：有两种方法可以爬到楼顶。1. 1 阶 + 1 阶2. 2 阶">
 <meta property="og:type" content="article">
-<meta property="og:title" content="求职规划">
-<meta property="og:url" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/index.html">
+<meta property="og:title" content="dp刷题-爬楼梯">
+<meta property="og:url" content="http://example.com/2023/06/26/dp%E5%88%B7%E9%A2%98-%E7%88%AC%E6%A5%BC%E6%A2%AF/index.html">
 <meta property="og:site_name" content="子川个人博客">
-<meta property="og:description" content="1.学习计划 2.简历指导简历字数并非越多越好，任何关键词都可能引起面试官的考察兴趣  基础信息：  书写顺序：个人信息-&gt;教育经历（获奖经历）-&gt;专业技能-&gt;实习（而非工作）经历-&gt;项目经验 文件名：姓名-院校-电话 文件格式：pdf（word排版会乱） 模版：冷色调、不要表格   基本信息：求职意向、电话、出生年月、邮箱、照片  个人博客&#x2F;Github视情况而">
+<meta property="og:description" content="爬楼梯题目描述原题链接：[70. 爬楼梯 - 力扣（LeetCode）](https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;climbing-stairs&#x2F; 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 示例 1： 12345输入：n &#x3D; 2输出：2解释：有两种方法可以爬到楼顶。1. 1 阶 + 1 阶2. 2 阶">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110035295.png">
-<meta property="og:image" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110406108.png">
-<meta property="og:image" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110428930.png">
-<meta property="og:image" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/4adf3b8e-6786-4fc8-892b-521ca5e4edaf.png">
-<meta property="article:published_time" content="2023-06-24T02:58:55.000Z">
-<meta property="article:modified_time" content="2023-06-26T05:17:00.572Z">
+<meta property="og:image" content="http://example.com/image-20230626190019486.png">
+<meta property="og:image" content="http://example.com/image-20230626191222403.png">
+<meta property="og:image" content="http://example.com/image-20230626192729974.png">
+<meta property="og:image" content="http://example.com/image-20230626193229910.png">
+<meta property="article:published_time" content="2023-06-26T10:51:34.000Z">
+<meta property="article:modified_time" content="2023-06-26T11:36:56.572Z">
 <meta property="article:author" content="子川">
+<meta property="article:tag" content="刷题">
+<meta property="article:tag" content="dp">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110035295.png">
+<meta name="twitter:image" content="http://example.com/image-20230626190019486.png">
   
   
   
-  <title>求职规划 - 子川个人博客</title>
+  <title>dp刷题-爬楼梯 - 子川个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="求职规划"></span>
+            <span id="subtitle" data-typed-text="dp刷题-爬楼梯"></span>
           
         </div>
 
@@ -212,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-24 10:58" pubdate>
-          2023年6月24日 上午
+        <time datetime="2023-06-26 18:51" pubdate>
+          2023年6月26日 晚上
         </time>
       </span>
     
@@ -273,152 +275,48 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">求职规划</h1>
+            <h1 style="display: none">dp刷题-爬楼梯</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="1-学习计划"><a href="#1-学习计划" class="headerlink" title="1.学习计划"></a>1.<strong>学习计划</strong></h1><p><img src="/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110035295.png" srcset="/img/loading.gif" lazyload alt="image-20230624110035295"></p>
-<h1 id="2-简历指导"><a href="#2-简历指导" class="headerlink" title="2.简历指导"></a><strong>2.简历指导</strong></h1><p><strong>简历字数并非越多越好，任何关键词都可能引起面试官的考察兴趣</strong></p>
+                <h1 id="爬楼梯"><a href="#爬楼梯" class="headerlink" title="爬楼梯"></a>爬楼梯</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>原题链接：[70. 爬楼梯 - 力扣（LeetCode）](<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/climbing-stairs/">https://leetcode.cn/problems/climbing-stairs/</a></p>
+<p>假设你正在爬楼梯。需要 <code>n</code> 阶你才能到达楼顶。</p>
+<p>每次你可以爬 <code>1</code> 或 <code>2</code> 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs tap">输入：n = 2<br>输出：2<br>解释：有两种方法可以爬到楼顶。<br>1.<span class="hljs-number"> 1 </span>阶 +<span class="hljs-number"> 1 </span>阶<br>2.<span class="hljs-number"> 2 </span>阶<br></code></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs tap">输入：n = 3<br>输出：3<br>解释：有三种方法可以爬到楼顶。<br>1.<span class="hljs-number"> 1 </span>阶 +<span class="hljs-number"> 1 </span>阶 +<span class="hljs-number"> 1 </span>阶<br>2.<span class="hljs-number"> 1 </span>阶 +<span class="hljs-number"> 2 </span>阶<br>3.<span class="hljs-number"> 2 </span>阶 +<span class="hljs-number"> 1 </span>阶<br></code></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
 <ul>
-<li><p>基础信息：</p>
-<ul>
-<li>书写顺序：个人信息-&gt;教育经历（获奖经历）-&gt;专业技能-&gt;<strong>实习（而非工作）</strong>经历-&gt;项目经验</li>
-<li>文件名：姓名-院校-电话</li>
-<li>文件格式：pdf（word排版会乱）</li>
-<li>模版：冷色调、不要表格</li>
+<li><code>1 &lt;= n &lt;= 45</code></li>
 </ul>
-</li>
-<li><p>基本信息：<em>求职意向</em>、电话、出生年月、邮箱、<em>照片</em></p>
-<ul>
-<li>个人博客&#x2F;Github视情况而定</li>
-<li>邮箱：必须为常用邮箱</li>
-<li>意向城市：强需求可以填写</li>
-</ul>
-</li>
-<li><p>教育经历：学校、专业、学历、<strong>时间区间</strong></p>
-<ul>
-<li>主修课程：经得住问，可以写</li>
-<li>竞赛经历：算法题难度增加</li>
-</ul>
-</li>
-<li><p>专业技能：<strong>精通</strong> &gt; 熟悉 &gt; 熟练使用&#x3D;掌握 &gt; 了解</p>
-<ul>
-<li>专注<ul>
-<li>不能同时熟悉Java、C++</li>
-</ul>
-</li>
-<li>不能同时熟悉MySQL、Oracle</li>
-<li>不要存在单词错误、大小写错误</li>
-<li>结构层次、分门别类</li>
-<li>数据结构与算法不建议提及</li>
-<li>不建议出现的关键词：深入、精通、扎实、经验丰富</li>
-</ul>
-</li>
-<li><p>自我评价：不需要</p>
-</li>
-</ul>
-<p><strong>目的：让面试官快速了解项目背景，与面试官有的聊</strong></p>
-<ul>
-<li><p>项目来源：【1-2要标明清楚】</p>
-<ul>
-<li><p>实习经历的项目</p>
-</li>
-<li><p>学校的生产项目（学校的XX系统）</p>
-</li>
-<li><p>学校的课程设计 或者 练手项目</p>
-</li>
-</ul>
-</li>
-<li><p>项目数量：2-3个</p>
-</li>
-<li><p>项目 &#x3D; 产品 + 技术 + 结果（传达给简历阅读者的信息）</p>
-<ul>
-<li>项目描述：做了什么产品</li>
-<li>技术栈：用到了什么技术<strong>（与专业技能相辅相成）</strong></li>
-<li>取得了什么结果<ul>
-<li>规模（量化指标）：用户规模，资金规模等<ul>
-<li>若规模较大&#x2F;场景较为明显，要想好“如何支撑”</li>
-</ul>
-</li>
-<li>角色：主导者、参与者<ul>
-<li>作为参与者，可以适当包装，但要清楚细节</li>
-<li>作为主导者，可以讲明带领的团队人数</li>
-</ul>
-</li>
-<li>推荐描述方式：<ul>
-<li>通过XXX实现XXX，达到XX效果</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>项目书写其他技巧：</p>
-<ul>
-<li>按照时间倒序写</li>
-<li>详细的项目描述将亮点写在前面</li>
-<li>岗位无关的项目尽量少写</li>
-</ul>
-</li>
-<li><p><strong>建议的项目描述模版</strong></p>
-</li>
-</ul>
-<p>项目名称                      所属组织&#x2F;公司                               时间区间</p>
-<p>项目描述： 2-5句话内描述清楚主要功能。</p>
-<p>角色：参与者&#x2F;主导者</p>
-<p>技术栈：A、B、C、D、E、F（重要的放前面）</p>
-<ol>
-<li><p>通过X实现了Y，达到了Z的效果</p>
-</li>
-<li><p>通过X实现了Y，达到了Z的效果</p>
-</li>
-<li><p>通过X实现了Y，达到了Z的效果</p>
-</li>
-<li><p>通过X实现了Y，达到了Z的效果</p>
-</li>
-</ol>
-<p>[个数：3-6]</p>
-<h1 id="3-学习方法"><a href="#3-学习方法" class="headerlink" title="3.学习方法"></a>3.学习方法</h1><p><img src="/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110406108.png" srcset="/img/loading.gif" lazyload alt="image-20230624110406108"></p>
-<p><img src="/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/image-20230624110428930.png" srcset="/img/loading.gif" lazyload alt="image-20230624110428930"></p>
-<h1 id="4-知识图谱"><a href="#4-知识图谱" class="headerlink" title="4.知识图谱"></a><strong>4.知识图谱</strong></h1><p><img src="/2023/06/24/%E6%B1%82%E8%81%8C%E8%A7%84%E5%88%92/4adf3b8e-6786-4fc8-892b-521ca5e4edaf.png" srcset="/img/loading.gif" lazyload></p>
-<p><strong>红色：高频考点</strong></p>
-<p><strong>橙色：中频考点</strong></p>
-<p><strong>黑色：低频考点</strong></p>
-<h1 id="5-附录"><a href="#5-附录" class="headerlink" title="5.附录"></a><strong>5.附录</strong></h1><p><strong>书籍推荐</strong></p>
-<p>关于看书学习&#x2F;上网学习的几点建议：</p>
-<ol>
-<li>写的比较好的书是前后逻辑是很强的，利于理解。网上的博文的作者不一定有毅力坚持，往往烂尾，且天下文章一大抄，其中的错误可能被广为流传。</li>
-<li>背面试题 vs 技术理解：一个是招式，一个是内功，相辅相成，缺一不可。</li>
-<li>购买前查看简介，基于的版本，是不是如今的主流版本。</li>
-<li>针对于“比较新的又没有大规模实践的”技术的书籍可以不买，看官方文档。</li>
-</ol>
-<p>刷题：</p>
-<ul>
-<li>理解：《漫画算法 小灰的算法之旅》</li>
-<li>刷题：《剑指Offer》</li>
-</ul>
-<p>Java基础：</p>
-<ul>
-<li>大杂烩基础：《Effective Java》（第三版）</li>
-<li>并发：《Java并发编程实战》</li>
-<li>JVM：《深入理解Java虚拟机》（第三版）</li>
-</ul>
-<p>Mysql：</p>
-<ul>
-<li>进阶：《MySQL技术内幕:InnoDB存储引擎》</li>
-</ul>
-<p>Linux：</p>
-<ul>
-<li>鸟哥的Linux私房菜（基础学习篇）</li>
-</ul>
-<p>视野拓宽与技术理解：</p>
-<ul>
-<li>《码农翻身》</li>
-<li>《代码整洁之道》</li>
-<li>《重构：改善既有代码的设计》</li>
-<li>《领域驱动设计》</li>
-</ul>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>每次可以爬一级或者两级，因此最后一次要么是爬了1级，要么是爬了2级，所以问题可以转化为爬上（n-1）级楼梯和爬上（n-2）级楼梯分别有多少种方法，再求两者的和，即：<br>f（x）&#x3D;f（x-1）+f（x-2）；也就是斐波那契数列。</p>
+<p>此题中，base case是：dp[0] &#x3D; 0,dp[1] &#x3D; 1;dp[2]&#x3D;2<br>状态转移方程是：dp[i] &#x3D; dp[i-1] + dp[i-2];</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><strong>状态压缩</strong>，每次只记录必要的数据，即前两个数据。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">climbStairs</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span> &#123;<br>        <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">3</span>)&#123;<br>            <span class="hljs-keyword">return</span> n;<br>        &#125;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">3</span>; i &lt;= n; i++)&#123;<br>            <span class="hljs-type">int</span> <span class="hljs-variable">c</span> <span class="hljs-operator">=</span> a + b;<br>            a = b;<br>            b = c;<br>        &#125;<br>        <span class="hljs-keyword">return</span> b;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>AC记录如下：</p>
+<p><img src="/image-20230626190019486.png" srcset="/img/loading.gif" lazyload alt="image-20230626190019486"></p>
+<p>可以看出内存还可以优化，突然想起来两数的替换好像可以不用开辟额外的内存空间，如果我要替换a和b代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">a=a+b;<br>b=a-b;<br>a=a-b;<br></code></pre></td></tr></table></figure>
+
+<p>在此基础上略微修改，我们需要的值是a+b最后在b上，b在a上，如此代码如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">climbStairs</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span> &#123;<br>        <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">3</span>)&#123;<br>            <span class="hljs-keyword">return</span> n;<br>        &#125;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">3</span>; i &lt;= n; i++)&#123;<br>        	<span class="hljs-comment">// 计算这一轮的新值</span><br>            a=a+b;<br>            <span class="hljs-comment">// 替换位置</span><br>            a=a+b;<br>            b=a-b;<br>            a=a-b;<br>        &#125;<br>        <span class="hljs-keyword">return</span> b;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>AC记录如下：</p>
+<p><img src="/image-20230626191222403.png" srcset="/img/loading.gif" lazyload alt="image-20230626191222403"></p>
+<p>可以看出还可以继续优化（剩下的0.25%是什么魔鬼&gt;&lt;），仔细想想，for循环中的i好像可以优化掉，然后试了一下，内存反倒增加了</p>
+<p>代码如下</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">climbStairs</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span> &#123;<br>        <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">3</span>)&#123;<br>            <span class="hljs-keyword">return</span> n;<br>        &#125;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;<br>        <span class="hljs-keyword">for</span>(;n &gt;= <span class="hljs-number">3</span>;n--)&#123;<br>            a=a+b;<br>            a=a+b;<br>            b=a-b;<br>            a=a-b;<br>        &#125;<br>        <span class="hljs-keyword">return</span> b;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>AC记录：</p>
+<p><img src="/image-20230626192729974.png" srcset="/img/loading.gif" lazyload alt="image-20230626192729974"></p>
+<p>内存这个东西好像要靠运气，我多交了几次发现内存有波动。</p>
+<p><img src="/image-20230626193229910.png" srcset="/img/loading.gif" lazyload alt="image-20230626193229910"></p>
+<p>既然这样这题就到这里吧！！！&gt;.&lt;</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
@@ -427,6 +325,43 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%88%B7%E9%A2%98/dp/" class="category-chain-item">dp</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%88%B7%E9%A2%98/">#刷题</a>
+      
+        <a href="/tags/dp/">#dp</a>
+      
+    </div>
   
 </div>
 
@@ -436,8 +371,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>求职规划</div>
-      <div>http://example.com/2023/06/24/求职规划/</div>
+      <div>dp刷题-爬楼梯</div>
+      <div>http://example.com/2023/06/26/dp刷题-爬楼梯/</div>
     </div>
     <div class="license-meta">
       
@@ -449,7 +384,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月24日</div>
+          <div>2023年6月26日</div>
         </div>
       
       
@@ -481,18 +416,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/" title="机器学习相关概念及其相关算法概述">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">机器学习相关概念及其相关算法概述</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/" title="MySQL索引原理">
-                        <span class="hidden-mobile">MySQL索引原理</span>
+                      <a href="/2023/06/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0/" title="机器学习相关概念及其相关算法概述">
+                        <span class="hidden-mobile">机器学习相关概念及其相关算法概述</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
