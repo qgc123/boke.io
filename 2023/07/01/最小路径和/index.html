@@ -16,21 +16,26 @@
   <meta name="author" content="子川">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="最小路径和题目描述原题链接：64. 最小路径和 - 力扣（LeetCode） 给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。 说明：每次只能向下或者向右移动一步。 示例 1:   123输入：grid &#x3D; [[1,3,1],[1,5,1],[4,2,1]]输出：7解释：因为路径 1→3→1→1→1 的总和最小。  示例 2： 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/06/23/hello-world/index.html">
+<meta property="og:title" content="最小路径和">
+<meta property="og:url" content="http://example.com/2023/07/01/%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/index.html">
 <meta property="og:site_name" content="子川个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="最小路径和题目描述原题链接：64. 最小路径和 - 力扣（LeetCode） 给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。 说明：每次只能向下或者向右移动一步。 示例 1:   123输入：grid &#x3D; [[1,3,1],[1,5,1],[4,2,1]]输出：7解释：因为路径 1→3→1→1→1 的总和最小。  示例 2： 1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-23T15:34:54.773Z">
-<meta property="article:modified_time" content="2023-06-23T15:34:54.773Z">
+<meta property="og:image" content="http://example.com/image-20230701103943915.png">
+<meta property="og:image" content="http://example.com/2023/07/01/%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/image-20230701110533363.png">
+<meta property="article:published_time" content="2023-07-01T02:29:06.000Z">
+<meta property="article:modified_time" content="2023-07-01T03:45:42.862Z">
 <meta property="article:author" content="子川">
+<meta property="article:tag" content="刷题">
+<meta property="article:tag" content="dp">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/image-20230701103943915.png">
   
   
   
-  <title>Hello World - 子川个人博客</title>
+  <title>最小路径和 - 子川个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="最小路径和"></span>
           
         </div>
 
@@ -207,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-23 23:34" pubdate>
-          2023年6月23日 晚上
+        <time datetime="2023-07-01 10:29" pubdate>
+          2023年7月1日 上午
         </time>
       </span>
     
@@ -219,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          817 字
         
       </span>
     
@@ -230,7 +235,7 @@
         
         
         
-          4 分钟
+          7 分钟
         
       </span>
     
@@ -268,25 +273,36 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">最小路径和</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="最小路径和"><a href="#最小路径和" class="headerlink" title="最小路径和"></a>最小路径和</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>原题链接：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/minimum-path-sum/">64. 最小路径和 - 力扣（LeetCode）</a></p>
+<p>给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。</p>
+<p>说明：每次只能向下或者向右移动一步。</p>
+<p><strong>示例 1:</strong></p>
+<p> <img src="/image-20230701103943915.png" srcset="/img/loading.gif" lazyload alt="image-20230701103943915"></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs lua">输入：grid = <span class="hljs-string">[[1,3,1],[1,5,1],[4,2,1]]</span><br>输出：<span class="hljs-number">7</span><br>解释：因为路径 <span class="hljs-number">1</span>→<span class="hljs-number">3</span>→<span class="hljs-number">1</span>→<span class="hljs-number">1</span>→<span class="hljs-number">1</span> 的总和最小。<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<p><strong>示例 2：</strong></p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lua">输入：grid = <span class="hljs-string">[[1,2,3],[4,5,6]]</span><br>输出：<span class="hljs-number">12</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>m == grid.length</code></li>
+<li><code>n == grid[i].length</code></li>
+<li><code>1 &lt;= m, n &lt;= 200</code></li>
+<li><code>0 &lt;= grid[i][j] &lt;= 200</code></li>
+</ul>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>定义集合f[i] [j]为到达(i, j )位置时的最小数字和</p>
+<p>状态转移方程：f[i] [j] &#x3D; min(f[i-1] [j], f[i] [j-1]) + gird[i-1] [j-1]</p>
+<p>边界问题：防止不越界就可以</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">minPathSum</span><span class="hljs-params">(<span class="hljs-type">int</span>[][] grid)</span> &#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; grid.length; i++)&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; j &lt; grid[i].length; j++)&#123;<br>                <span class="hljs-keyword">if</span>(i == <span class="hljs-number">0</span> &amp;&amp; j == <span class="hljs-number">0</span>)<span class="hljs-keyword">continue</span>;<br>                <span class="hljs-keyword">if</span>(i == <span class="hljs-number">0</span>)<br>                    grid[i][j] = grid[i][j-<span class="hljs-number">1</span>] + grid[i][j];<br>                <span class="hljs-keyword">if</span>(j == <span class="hljs-number">0</span>)<br>                    grid[i][j] = grid[i-<span class="hljs-number">1</span>][j] + grid[i][j];<br>                <span class="hljs-keyword">if</span>(i != <span class="hljs-number">0</span> &amp;&amp; j != <span class="hljs-number">0</span>)<br>                    grid[i][j] = Math.min(grid[i-<span class="hljs-number">1</span>][j], grid[i][j-<span class="hljs-number">1</span>]) + grid[i][j];<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> grid[grid.length - <span class="hljs-number">1</span>][grid[<span class="hljs-number">0</span>].length - <span class="hljs-number">1</span>];<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<p>AC记录：</p>
+<p><img src="/2023/07/01/%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/image-20230701110533363.png" srcset="/img/loading.gif" lazyload alt="image-20230701110533363"></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             
@@ -294,6 +310,43 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%88%B7%E9%A2%98/dp/" class="category-chain-item">dp</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%88%B7%E9%A2%98/">#刷题</a>
+      
+        <a href="/tags/dp/">#dp</a>
+      
+    </div>
   
 </div>
 
@@ -303,8 +356,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2023/06/23/hello-world/</div>
+      <div>最小路径和</div>
+      <div>http://example.com/2023/07/01/最小路径和/</div>
     </div>
     <div class="license-meta">
       
@@ -316,7 +369,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月23日</div>
+          <div>2023年7月1日</div>
         </div>
       
       
@@ -348,15 +401,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/24/hexo-githubpages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="hexo_githubpages搭建博客">
+                      <a href="/2023/07/01/%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84%E2%85%A1/" title="不同路径Ⅱ">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">hexo_githubpages搭建博客</span>
+                        <span class="hidden-mobile">不同路径Ⅱ</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/07/01/%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/" title="不同路径">
+                        <span class="hidden-mobile">不同路径</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
