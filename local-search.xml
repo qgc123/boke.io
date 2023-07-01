@@ -267,7 +267,9 @@
     
     <categories>
       
-      <category>Java知识体系，中间件</category>
+      <category>Java知识体系</category>
+      
+      <category>中间件</category>
       
       <category>Mysql</category>
       
@@ -289,7 +291,7 @@
     <link href="/2023/06/24/Java%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E6%A0%91%E7%8A%B6%E5%9B%BE/"/>
     <url>/2023/06/24/Java%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E6%A0%91%E7%8A%B6%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul><li>Java知识体系<ul><li>Java<ul><li>基础<ul><li>数据类型（基本类型与装箱类型）</li><li>异常</li><li>OOP（封装继承多态）</li><li>泛型</li><li>反射</li></ul></li></ul></li><li>开发框架</li><li>中间件<ul><li>MySQL<ul><li>[索引](<a href="https://qgcatg.top/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/">MySQL索引原理 - 子川个人博客 (qgcatg.top)</a>)</li><li>事务</li><li>锁</li><li>分布式解决方案<ul><li>主从复制</li><li>读写分离</li><li>分库分表</li><li>分布式事务</li></ul></li></ul></li></ul></li><li>工程理论</li><li>工程体系</li><li>计算机基础</li></ul></li></ul></blockquote><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul><li>Java知识体系<ul><li>Java<ul><li>基础<ul><li>数据类型（基本类型与装箱类型）</li><li>异常</li><li>OOP（封装继承多态）</li><li>泛型</li><li>反射</li></ul></li></ul></li><li>开发框架</li><li>中间件<ul><li>MySQL<ul><li><a href="https://qgcatg.top/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/">索引</a></li><li>事务</li><li>锁</li><li>分布式解决方案<ul><li>主从复制</li><li>读写分离</li><li>分库分表</li><li>分布式事务</li></ul></li></ul></li></ul></li><li>工程理论</li><li>工程体系</li><li>计算机基础</li></ul></li></ul></blockquote><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     
