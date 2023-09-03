@@ -47,7 +47,7 @@
 <meta property="og:image" content="http://example.com/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/4ddd953d-850b-4b13-9e46-d1bdfa7aae1a.png">
 <meta property="og:image" content="http://example.com/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/a35c6b4a-a161-4ced-824b-65260247bd1f.png">
 <meta property="article:published_time" content="2023-06-24T00:31:44.000Z">
-<meta property="article:modified_time" content="2023-07-01T14:58:58.140Z">
+<meta property="article:modified_time" content="2023-07-05T05:38:46.244Z">
 <meta property="article:author" content="子川">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary_large_image">
@@ -244,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.2k 字
+          9.3k 字
         
       </span>
     
@@ -255,7 +255,7 @@
         
         
         
-          77 分钟
+          78 分钟
         
       </span>
     
@@ -701,7 +701,12 @@
 <p><img src="/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/73f050bf-37a5-48f4-9505-b22d818f2d2d.png" srcset="/img/loading.gif" lazyload></p>
 <p><img src="/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/06430fec-9f61-45d6-84a5-d6bd991416a9.png" srcset="/img/loading.gif" lazyload></p>
 <h3 id="访问类型-ref【重点】"><a href="#访问类型-ref【重点】" class="headerlink" title="访问类型-ref【重点】"></a>访问类型-ref【重点】</h3><ul>
-<li>ref：对某个普通的二级索引列与常数进行等值比较</li>
+<li><p>ref：对某个普通的二级索引列与常数进行等值比较</p>
+</li>
+<li><p><strong>回表：通过辅助索引查询到的数据，不包含用户查询的全量数据，需要用主键去聚簇索引中再次查询的过程。（随机IO）</strong></p>
+</li>
+<li><p><strong>索引覆盖：只需要在一棵索引树上就能获取SQL所需的所有列数据，无需回表。</strong></p>
+</li>
 </ul>
 <p><img src="/2023/06/24/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86/268b086b-6fba-4728-b54c-a3d73a225074.png" srcset="/img/loading.gif" lazyload></p>
 <p>面试题：</p>
