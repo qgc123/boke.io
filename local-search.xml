@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>VSCode配置C/C++环境</title>
+    <link href="/2024/05/23/VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/"/>
+    <url>/2024/05/23/VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/</url>
+    
+    <content type="html"><![CDATA[<h1 id="VSCode配置C-x2F-C-环境"><a href="#VSCode配置C-x2F-C-环境" class="headerlink" title="VSCode配置C&#x2F;C++环境"></a>VSCode配置C&#x2F;C++环境</h1><h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>首先，我们直接去<a href="https://code.visualstudio.com/">VSCode官网</a>下载对应操作系统版本的安装包即可。</p><p><img src="/VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/image-20240317141854159.png" alt="image-20240317141854159"></p><p>我下的版本在 <a href="%E7%A8%8B%E5%BA%8F%E5%8F%8A%E5%85%B6%E7%8E%AF%E5%A2%83">程序及其环境</a> 中</p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>直接打开下载好的.exe文件进行安装即可。</p><p><img src="/../../VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/image-20240317142037440.png" alt="image-20240317142037440"></p><p>一直下一步就行</p><p><img src="/../../VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/image-20240317142123136.png" alt="image-20240317142123136"></p><h2 id="三、设置中文环境"><a href="#三、设置中文环境" class="headerlink" title="三、设置中文环境"></a>三、设置中文环境</h2><p>打开VSCode后，首先是欢迎界面。可以看到，这里默认的是英文环境。</p><p><img src="/../../VSCode%E9%85%8D%E7%BD%AEC-C-%E7%8E%AF%E5%A2%83/image-20240317142531930.png" alt="image-20240317142531930"></p><p>到插件位置搜索chinese安装第一个（中文简体）</p><h2 id="四、完全卸载"><a href="#四、完全卸载" class="headerlink" title="四、完全卸载"></a>四、完全卸载</h2><p>如果之前有安装过VSCode，然后只是简单卸载的话，再次安装之后，是还出现之前的配置信息，包括打开的文件夹、安装过的扩展等，这是因为之前并没有完全将VSCode卸载干净。如果想干净卸载掉VSCode再重新安装的话，就需要在卸载之后再删除掉两个目录的内容。分别是：</p><ul><li>C:\Users$用户名.vscode</li><li>C:\Users$用户名\AppData\Roaming\Code【注】这里的“$用户名”根据自己的用户名而定。</li></ul><p>删除掉这两个目录的内容之后，如果再安装VSCode的话，就相当于是全新安装了，即不会出现之前的相关配置信息了。</p><h2 id="五、配置C-x2F-C-环境"><a href="#五、配置C-x2F-C-环境" class="headerlink" title="五、配置C&#x2F;C++环境"></a>五、配置C&#x2F;C++环境</h2><p>VSCode只是一款文本编辑器，不仅需要安装对应编程语言的扩展，还需要安装相应的编译器或者解释器。笔者这里首先需要的是C&#x2F;C++的环境，所以先介绍如何配置C&#x2F;C++的开发环境。 首先先创建一个文件夹，用来存放代码。此处建议不同的编程语言采用不同的文件夹，因为VSCode打开文件夹（称作工作目录）之后，如果进行一定的配置之后，会在该文件夹下产生一个叫”.vscode”的文件夹，该文件夹中存放的是一些.json的配置文件，这些配置文件是对工作目录中的代码文件产生作用的。所以以后需要相同开发环境的时候，不用每次都去创建配置文件并进行相关配置，直接拷贝.vscode文件夹即可，但是第一次还是需要手动配置出自己所需的环境。</p><h2 id="1-安装MinGW编译器"><a href="#1-安装MinGW编译器" class="headerlink" title="1.安装MinGW编译器"></a>1.安装MinGW编译器</h2><p>C&#x2F;C++的编译器有很多种，可自行选择，笔这里选择开源的MinGW编译器。可以从<a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">sourceforge的mingw项目</a>上下载64位的编译器，直接打开进行安装</p><h2 id="2-安装C-x2F-C-扩展"><a href="#2-安装C-x2F-C-扩展" class="headerlink" title="2.安装C&#x2F;C++扩展"></a>2.安装C&#x2F;C++扩展</h2><h2 id="3-配置C-x2F-C-环境"><a href="#3-配置C-x2F-C-环境" class="headerlink" title="3.配置C&#x2F;C++环境"></a>3.配置C&#x2F;C++环境</h2><h3 id="1-配置编译器"><a href="#1-配置编译器" class="headerlink" title="(1).配置编译器"></a>(1).配置编译器</h3><h3 id="2-配置构建任务"><a href="#2-配置构建任务" class="headerlink" title="(2).配置构建任务"></a>(2).配置构建任务</h3><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title></title>
     <link href="/2024/03/17/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/"/>
     <url>/2024/03/17/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/</url>
